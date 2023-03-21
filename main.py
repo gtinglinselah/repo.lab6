@@ -1,4 +1,4 @@
-
+# Genesis Selah
 def encoder(pass_code):
     password = ''
     for i in pass_code:
@@ -18,7 +18,7 @@ def menu():
           '2. Decode Password',
           '3. Exit', sep='\n')
 
-
+# Richard Romero
 def decoder(pw):
     pw_dec = ""
     for num in pw:
