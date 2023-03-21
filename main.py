@@ -18,8 +18,13 @@ def menu():
           '2. Decode Password',
           '3. Exit', sep='\n')
 
-def decoder(pass_code):
-    pass
+
+def decoder(pw):
+    pw_dec = ""
+    for num in pw:
+        num = int(num) - 3
+        pw_dec += str(num)
+    return pw_dec
 
 
 if __name__ == "__main__":
@@ -37,7 +42,9 @@ if __name__ == "__main__":
             print('Your password has been encoded and stored!')
 
         elif option == 2:
-            pass
+            pw_dec = decoder(pw_enc)
+            # decode encoded password back to original using decode function
+            print(f"the encoded password is {pw_enc}, and the original password is {pw_dec}.")
 
         elif option == 3:
             break
